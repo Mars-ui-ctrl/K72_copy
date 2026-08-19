@@ -18,6 +18,8 @@ const WelcomeAnim = () => {
         //     duration: 0.5,
         //     stagger: { amount: -0.2 },
         // })
+        gsap.set(parentRefAnim.current, { display: 'flex' });
+        gsap.set(welcomeAnim.current.children, { y: '0%' });
 
         tl.to(welcomeAnim.current.children, {
             y: '100%',
@@ -29,10 +31,10 @@ const WelcomeAnim = () => {
             display: 'none'
         })
 
-        tl.to(welcomeAnim.current.children,{
-            y:'0%'
+        tl.to(welcomeAnim.current.children, {
+            y: '0%'
         })
-    },[currentPath]);
+    }, [currentPath]);
     return (
         <div ref={parentRefAnim} className='h-screen z-10 top-0 w-full flex fixed'>
             <div ref={welcomeAnim} className='h-full flex w-full '>
