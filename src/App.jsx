@@ -13,12 +13,12 @@ import Camille from './assets/CAMILLE_480X640_2.webp';
 import Meggie from './assets/MEGGIE_480X640_2.webp';
 import Joel from './assets/joel_480X640_3.webp';
 
-const App = () => {
-  [Carl, Olivier, ChantalG, Michele, Mel, Camille, Meggie, Joel].forEach((src) => {
-    const img = new Image();
-    img.src = src;
-  });
+[Carl, Olivier, ChantalG, Michele, Mel, Camille, Meggie, Joel].forEach((src) => {
+  const img = new Image();
+  img.src = src;
+});
 
+const App = () => {
   return (
     <div className=''>
       <WelcomeAnim />
