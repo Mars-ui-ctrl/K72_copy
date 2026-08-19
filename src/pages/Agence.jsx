@@ -2,14 +2,14 @@ import { useRef } from "react"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import Carl from '../assets/Carl_480x640.jpg';
-import Olivier from '../assets/Olivier_480x640.jpg';
-import ChantalG from '../assets/ChantalG_480x640.jpg';
-import Michele from '../assets/Michele_480X640.jpg';
-import Mel from '../assets/MEL_480X640.jpg';
-import Camille from '../assets/CAMILLE_480X640_2.jpg';
-import Meggie from '../assets/MEGGIE_480X640_2.jpg';
-import Joel from '../assets/joel_480X640_3.jpg';
+import Carl from '../assets/Carl_480x640.webp';
+import Olivier from '../assets/Olivier_480x640.webp';
+import ChantalG from '../assets/ChantalG_480x640.webp';
+import Michele from '../assets/Michele_480X640.webp';
+import Mel from '../assets/MEL_480X640.webp';
+import Camille from '../assets/CAMILLE_480X640_2.webp';
+import Meggie from '../assets/MEGGIE_480X640_2.webp';
+import Joel from '../assets/joel_480X640_3.webp';
 
 
 const Agence = () => {
