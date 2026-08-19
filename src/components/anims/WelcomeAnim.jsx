@@ -23,8 +23,8 @@ const WelcomeAnim = () => {
 
         tl.to(welcomeAnim.current.children, {
             y: '100%',
-            duration: 0.5,
-            stagger: { amount: -0.3 },
+            duration: .7,
+            stagger: { amount: -0.5 },
         })
 
         tl.to(parentRefAnim.current, {
