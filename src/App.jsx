@@ -12,6 +12,8 @@ import Mel from './assets/MEL_480X640.webp';
 import Camille from './assets/CAMILLE_480X640_2.webp';
 import Meggie from './assets/MEGGIE_480X640_2.webp';
 import Joel from './assets/joel_480X640_3.webp';
+import Navbar from './components/Navigation/Navbar'
+import FullNavPage from './components/Navigation/FullNavPage';
 
 [Carl, Olivier, ChantalG, Michele, Mel, Camille, Meggie, Joel].forEach((src) => {
   const img = new Image();
@@ -19,14 +21,19 @@ import Joel from './assets/joel_480X640_3.webp';
 });
 
 const App = () => {
+  const [open, setOpen] = useState(false)
   return (
-    <div className=''>
+    <div className='h-screen w-full '>
+      <Navbar onOpen={() => setOpen(true)} />
+        {open &&(
+          <FullNavPage onClose={() => setOpen(false)} />
+        )}
       <WelcomeAnim />
       <div>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/agence' element={<Agence />} />
-          <Route path='/projets' element={<Projects />} />
+          <Route path='/projects' element={<Projects />} />
         </Routes>
       </div>
     </div>

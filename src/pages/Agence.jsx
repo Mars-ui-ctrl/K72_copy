@@ -57,7 +57,7 @@ const Agence = () => {
     <div>
       <div className="agence-section1">
         <div ref={imageDivRef} className="absolute top-[25%] overflow-hidden left-[30%] ">
-          <img ref={imageRef} className="h-80 object-cover rounded-2xl z- " src={Carl} alt="agence-img1" />
+          <img ref={imageRef} className="h-80 object-cover rounded-2xl " src={Carl} alt="agence-img1" />
         </div>
         <div>
 
@@ -66,15 +66,15 @@ const Agence = () => {
               <br />
               Douze</h1>
           </div>
-          <div className="pl-[40%] mt-5">
-            <p className="text-[3.5rem] font-[lausanne-500] indent-[5em] leading-[1]">
+          <div className="pl-[40%] mt-5 relative">
+            <p className="text-[3.5rem] font-[lausanne-500] indent-[5em] leading-[1] ">
               Notre curiosité nourrit notre créativité. On reste humbles et on dit non aux gros egos, même le vôtre. Une marque est vivante. Elle a des valeurs, une personnalité, une histoire. Si on oublie ça, on peut faire de bons chiffres à court terme, mais on la tue à long terme. C’est pour ça qu’on s’engage à donner de la perspective, pour bâtir des marques influentes.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="agence-section2 h-screen bg-red-300">
+      <div className="agence-section2 h-screen bg-black">
 
       </div>
     </div>
