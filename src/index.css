@@ -4,7 +4,23 @@
     font-family: lausanne-300;
     src: url(../public/fonts/Lausanne-300.woff2);
 }
+
 @font-face {
     font-family: lausanne-500;
     src: url(../public/fonts/Lausanne-500.woff2);
+}
+
+.marquee-effect{
+    animation: marquee 10s linear infinite;
+    display: flex;
+    width: max-content;
+}
+
+@keyframes marquee {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-50%);
+    }
 }
